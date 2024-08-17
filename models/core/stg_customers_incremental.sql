@@ -13,7 +13,7 @@ WITH new_data AS (
     email,
     created_at,
     updated_at
-  FROM {{ ref('raw_customers') }}  -- Reference the raw layer
+  FROM {{ ref('raw_customers') }}  -- Reference the raw layer1
   WHERE updated_at > COALESCE((SELECT MAX(updated_at) FROM {{ this }}), '1900-01-01')  -- Handle the first run gracefully
 )
 
