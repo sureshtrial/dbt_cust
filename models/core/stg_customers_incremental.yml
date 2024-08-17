@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_customers_incremental
+    description: "Core incremental model for customer data."
+    columns:
+      - name: customer_id
+        description: "The unique identifier for a customer."
+      - name: updated_at
+        description: "The timestamp when the customer data was last updated."
