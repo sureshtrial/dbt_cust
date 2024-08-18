@@ -3,12 +3,10 @@ version: 2
 models:
   - name: raw_customers
     description: "This table contains raw customer data ingested from the CRM system."
-    config:
-      materialized: table # Ensure materialization is set to table
     columns:
       - name: customer_id
         description: "A unique identifier for each customer."
-        tests:
+        data_tests:
           - unique
           - not_null
 
@@ -20,17 +18,17 @@ models:
 
       - name: email
         description: "The email address of the customer."
-        tests:
+        data_tests:
           - not_null
 
       - name: created_at
         description: "The timestamp when the customer record was created in the source system."
-        tests:
+        data_tests:
           - not_null
 
       - name: updated_at
         description: "The timestamp when the customer record was last updated in the source system."
-        tests:
+        data_tests:
           - not_null
 
       - name: source_system
