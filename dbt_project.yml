@@ -34,5 +34,19 @@ clean-targets: # directories to be removed by `dbt clean`
 #  snapshot_src:
 #     materialized: table # Models in the 'marts' directory will be materialized as tables
 #      enabled: true
-seeds:
-  +delimiter: "|"
+# dbt_project.yml
+
+models:
+  our_project_name:
+
+    raw:
+      schema: dev_raw  # All models in the dev_raw directory will go to the dev_raw schema
+      materialized: view  # Example: All models in this layer are materialized as views
+
+    stg:
+      schema: dev_stg  # All models in the dev_stg directory will go to the dev_stg schema 
+      materialized: table  # Example: All models in this layer are materialized as tables
+
+    core:
+      schema: dev_core  # All models in the dev_core directory will go to the dev_core schema
+      materialized: incremental  # Example: All models in this layer are materialized as incrementals
