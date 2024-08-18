@@ -1,8 +1,7 @@
 {{
   config(
     materialized='incremental',
-    unique_key='customer_id',
-    schema='DEV_CORE',
+    unique_key='customer_id'
   )
 }}
 
