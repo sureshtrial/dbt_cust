@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: custome_staging # This should match the source name you are using in your model
+  - name: raw_customer # This should match the source name you are using in your model
     description: "Source system for customer data."
-    schema: cust_stg # Replace this with the schema where your source data resides
+    schema: DEV_RAW # Replace this with the schema where your source data resides
     tables:
       - name: customers # This should match the table name in your source system
         description: "Table containing raw customer data from CRM system."

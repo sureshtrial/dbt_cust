@@ -4,11 +4,11 @@
 
 SELECT
     customer_id,
-    first_name,
-    last_name,
+    first_name as cust_first_name,
+    last_name as cust_last_name,
     email,
     created_at,
     updated_at,
     source_system
 FROM
-    {{ source('custome_staging', 'customers') }} -- Adjust this based on your source setup
+    {{ source('raw_customer', 'customers') }} -- Adjust this based on your source setup
