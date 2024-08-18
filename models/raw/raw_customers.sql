@@ -1,7 +1,3 @@
-{{ config(
-    materialized='table'
-) }}
-
 SELECT
     customer_id,
     first_name as cust_first_name,

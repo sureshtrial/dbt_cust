@@ -1,10 +1,3 @@
-{{ 
-  config(
-    schema='DEV_STG',
-    materialized= 'table'
-  ) 
-}}
-
 WITH stg_data AS (
   SELECT
     *
