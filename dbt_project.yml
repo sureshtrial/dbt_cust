@@ -43,7 +43,7 @@ models:
 
     raw:
       +schema: dev_raw  # Models in the 'raw' directory will use the 'dev_raw' schema
-      +materialized: view # this is changed
+      +materialized: view
     stg:
       +schema: dev_stg  # Models in the 'stg' directory will use the 'dev_stg' schema
       +materialized: table
