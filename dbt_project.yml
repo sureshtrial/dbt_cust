@@ -42,12 +42,12 @@ models:
   customer:
 
     raw:
-      +schema: dev_raw  # Models in the 'raw' directory will use the 'dev_raw' schema
+      +schema: raw  # Models in the 'raw' directory will use the 'dev_raw' schema
       +materialized: view
     stg:
-      +schema: dev_stg  # Models in the 'stg' directory will use the 'dev_stg' schema
+      +schema: stg  # Models in the 'stg' directory will use the 'dev_stg' schema
       +materialized: table
       +transient: true
     core:
-      +schema: dev_core  # Models in the 'core' directory will use the 'dev_core' schema
+      +schema: core  # Models in the 'core' directory will use the 'dev_core' schema
       +materialized: table
