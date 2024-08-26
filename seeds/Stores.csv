@@ -1,2 +1,21 @@
 StoreID|StoreName|Address|City|State|ZipCode|Email|Phone|Updated_at
-1|Main Street Store|123 Main2 St|Springfield|IL|62701|store11@email.com|555-0001|08-25-2024 14:20:00
+1|Main Street Store|123 Main St|Springfield|IL|62701|store1@email.com|555-0001|08-28-2024 03:03:03
+2|Second Street Store|234 Second St|Springfield|IL|62702|store2@email.com|555-0002|08-28-2024 03:03:03
+3|Third Street Store|345 Third St|Springfield|IL|62703|store3@email.com|555-0003|08-28-2024 04:03:03
+4|Fourth Street Store|456 Fourth St|Springfield|IL|62704|store4@email.com|555-0004|08-28-2024 04:03:03
+5|Fifth Street Store|567 Fifth St|Springfield|IL|62705|store5@email.com|555-0005|08-28-2024 03:03:03
+6|Sixth Street Store|678 Sixth St|Springfield|IL|62706|store6@email.com|555-0006|08-28-2024 03:03:03
+7|Seventh Street Store|789 Seventh St|Springfield|IL|62707|store7@email.com|555-0007|08-28-2024 03:03:03
+8|Eighth Street Store|890 Eighth St|Springfield|IL|62708|store8@email.com|555-0008|08-28-2024 03:03:03
+9|Ninth Street Store|901 Ninth St|Springfield|IL|62709|store9@email.com|555-0009|08-28-2024 03:03:03
+10|Tenth Street Store|123 Tenth St|Springfield|IL|62710|store10@email.com|555-0010|08-28-2024 03:03:03
+11|Eleventh Street Store|234 Eleventh St|Springfield|IL|62711|store11@email.com|555-0011|
+12|Twelfth Street Store|345 Twelfth St|Springfield|IL|62712|store12@email.com|555-0012|
+13|Thirteenth Street Store|456 Thirteenth St|Springfieeld|IL|62713|store113@email.com|555-0013|08-28-2024 03:03:03
+14|Fourteenth Street Store|567 Fourteenth St|Springfield|IL|62714|store14@email.com|555-0014|
+15|Fifteenth Street Store|678 Fifteenth St|Springfield|IL|62715|store15@email.com|555-0015|
+16|Sixteenth Street Store|789 Sixteenth St|Springfield|IL|62716|store16@email.com|555-0016|
+17|Seventeenth Street Store|890 Seventeenth St|Springfield|IL|62717|store17@email.com|555-0017|
+18|Eighteenth Street Store|901 Eighteenth St|Springfield|IL|62718|store18@email.com|555-0018|
+19|Nineteenth Street Store|123 Nineteenth St|Springfield|IL|62719|store19@email.com|555-0019|
+20|Twentieth Street Store|234 Twentieth St|Springfield|IL|62720|store20@email.com|555-0020|
