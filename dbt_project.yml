@@ -1,0 +1,61 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: "customer"
+version: "1.0.0"
+packages:
+  - package: dbt-labs/dbt_utils
+    version: [">=0.8.0", "<0.9.0"]
+
+# This setting configures which "profile" dbt uses for this project.
+profile: "PROD"
+on-run-start:
+  - "{{ set_date_input_format() }}"
+  - "{{ set_timestamp_input_format() }}"
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets: # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+
+#models:
+# customer:
+#sources:
+#   materialized: view # Models in the 'staging' directory will be materialized as views
+#  snapshot_src:
+#     materialized: table # Models in the 'marts' directory will be materialized as tables
+#      enabled: true
+# dbt_project.yml
+
+models:
+  +schema: dev_exp
+
+  customer:
+
+    raw:
+      +schema: raw  # Models in the 'raw' directory will use the 'dev_raw' schema
+      +materialized: view
+    stg:
+      +schema: stg  # Models in the 'stg' directory will use the 'dev_stg' schema
+      +materialized: table
+      +transient: true
+    core:
+      +schema: core  # Models in the 'core' directory will use the 'dev_core' schema
+      +materialized: table
+seeds:
+  +delimiter: "|"

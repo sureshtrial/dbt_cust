@@ -1,0 +1,6 @@
+target/
+dbt_modules/
+*.log
+*.csv
+*.json
+secrets.yml
