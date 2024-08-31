@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Core incremental model for customer data."
+    schema: DEV_STG  # Set the schema for this specific model
+    columns:
+      - name: customer_id
+        description: "The unique identifier for a customer."
+      - name: updated_at
+        description: "The timestamp when the customer data was last updated."

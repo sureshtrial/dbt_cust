@@ -1,6 +1,23 @@
-target/
+# DBT specific directories
 dbt_modules/
-*.log
-*.csv
-*.json
-secrets.yml
+target/
+logs/
+
+# DBT compiled SQL files (in case you use DBT’s compilation feature)
+compiled/
+
+# User-specific or environment-specific files
+profiles.yml
+.env
+
+# Python cache files (if you're using Python scripts within your DBT project)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# MacOS specific files
+.DS_Store
+
+# Visual Studio Code specific settings
+.vscode/
