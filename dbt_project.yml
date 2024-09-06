@@ -59,6 +59,7 @@ models:
       +materialized: table
 seeds:
   +delimiter: "|"
+<<<<<<< HEAD
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
@@ -120,3 +121,5 @@ models:
       +materialized: table
 seeds:
   +delimiter: "|"
+=======
+>>>>>>> b4951e9d9eccc129edcd2025c73011cb991c654c

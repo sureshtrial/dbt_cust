@@ -14,6 +14,10 @@ Try running the following commands:
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# dbt_cust
+>>>>>>> b4951e9d9eccc129edcd2025c73011cb991c654c
 =======
 # dbt_cust
 >>>>>>> b4951e9d9eccc129edcd2025c73011cb991c654c
