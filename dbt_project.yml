@@ -8,7 +8,7 @@ packages:
     version: [">=0.8.0", "<0.9.0"]
 
 # This setting configures which "profile" dbt uses for this project.
-profile: "PROD"
+profile: "dev"
 on-run-start:
   - "{{ set_date_input_format() }}"
   - "{{ set_timestamp_input_format() }}"
